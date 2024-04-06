@@ -22,16 +22,18 @@ const num = prompt(("choisi un nombre!").value);
 const container = document.createElement("div");
 document.body.appendChild(container);
 container.classList = "container";
+const containerSup = document.createElement("div");
+containerSup.id = "ctn";
 
 for(let i = 0; i < num; i++){
     const row = document.createElement("div");
     container.appendChild(row)
     row.classList = "row";
-for(let j = 0; j < num; j++){
-    const div = document.createElement("div");
-    row.appendChild(div);
-    div.classList = "white";
-    if((i+j)%2 === 0){
+    for(let j = 0; j < num; j++){
+        const div = document.createElement("div");
+        row.appendChild(div);
+        div.classList = "white";
+        if((i+j)%2 === 0){
         div.classList = "black";
         }
     } 
@@ -39,4 +41,4 @@ for(let j = 0; j < num; j++){
 
 
 
-//style.css
+// //style.css
